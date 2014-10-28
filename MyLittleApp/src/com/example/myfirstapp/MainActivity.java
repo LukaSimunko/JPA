@@ -80,7 +80,7 @@ public class MainActivity extends Activity implements OnInitListener {
 	public void onClickButtonSpeak(View v) {
 	        //get the text entered
 	        EditText enteredText = (EditText)findViewById(R.id.editText5);
-	        String words = enteredText.getText().toString();
+	        String words = enteredText.getText().toString(sd);
 	        speakWords(words);
 	}
     //speak the user text
