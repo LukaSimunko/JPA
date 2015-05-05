@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="JPA">
+		<class>demo.AAbteilungen</class>
+		<class>demo.BBestellungen</class>
+		<class>demo.BpBestellpo</class>
+		<class>demo.BpBestellpoPK</class>
+		<class>demo.EkEmailkunden</class>
+		<class>demo.EkEmailkundenPK</class>
+		<class>demo.EmEmailmitarbeiter</class>
+		<class>demo.EmEmailmitarbeiterPK</class>
+		<class>demo.EsEmailstandorte</class>
+		<class>demo.EsEmailstandortePK</class>
+		<class>demo.KKunden</class>
+		<class>demo.KoKonditionen</class>
+		<class>demo.KoKonditionenPK</class>
+		<class>demo.LLieferarten</class>
+		<class>demo.MMahnungen</class>
+		<class>demo.MMahnungenPK</class>
+		<class>demo.MMitarbeiter</class>
+		<class>demo.MaMahnungsarten</class>
+		<class>demo.PProdukte</class>
+		<class>demo.PaProduktarten</class>
+		<class>demo.SStandorte</class>
+		<class>demo.StStellen</class>
+		<class>demo.TkTelkunden</class>
+		<class>demo.TkTelkundenPK</class>
+		<class>demo.TmTelmitarbeiter</class>
+		<class>demo.TmTelmitarbeiterPK</class>
+		<class>demo.TsTelstandorte</class>
+		<class>demo.TsTelstandortePK</class>
+	</persistence-unit>
+</persistence>
