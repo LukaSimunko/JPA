@@ -13,7 +13,8 @@ import demo.AAbteilungen;
 public interface AAbteilungenService {
 	
 	List<AAbteilungen> findbybezeichnung(String bezeichnung);
-	AAbteilungen save(AAbteilungen a);
-	void delete(int i);
+	AAbteilungen save1(AAbteilungen a);
+	void delete1(int i);
+	Object findOne(int id1);
 
 }

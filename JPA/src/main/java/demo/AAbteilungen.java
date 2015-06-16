@@ -78,4 +78,10 @@ public class AAbteilungen implements Serializable {
 		return MMitarbeiter;
 	}
 
+	@Override
+	public String toString() {
+		return "AAbteilungen [a_ID=" + a_ID + ", aBezeichnung=" + aBezeichnung
+				+"]";
+	}
+
 }

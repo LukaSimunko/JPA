@@ -31,6 +31,29 @@ public class MitarbeiterServiceImpl implements MitarbeiterService {
 	public List<MMitarbeiter> findbyname(String nachname) {
 		return  repo.findByname(nachname);
 	}
+
+
+
+	@Override
+	public MMitarbeiter findOne(int i) {
+		return repo.findOne(i);
+	}
+
+
+
+	@Override
+	public void save(MMitarbeiter m) {
+		 repo.save(m);
+		
+	}
+
+
+
+	@Override
+	public void delete(int id1) {
+		repo.delete(id1);
+		
+	}
 	
 	
 

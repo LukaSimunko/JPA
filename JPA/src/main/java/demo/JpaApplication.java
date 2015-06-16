@@ -19,12 +19,12 @@ public class JpaApplication implements CommandLineRunner {
       
        
     }
-	@Override
+    @Override
 	public void run(String... arg0) throws Exception {
 		  	AAbteilungen abt = new AAbteilungen();
 	        abt.setA_ID(3);
 	        abt.setABezeichnung("PE");
-	        abts.save(abt);
+	        abts.save1(abt);
 		
 	}
     

@@ -66,7 +66,7 @@ public class MMitarbeiter implements Serializable {
 
 	//bi-directional many-to-one association to AAbteilungen
 	@ManyToOne
-	@JoinColumn(name="m_a_abteilung")
+	@JoinColumn(name="m_a_abteilung", nullable=true)
 	private AAbteilungen AAbteilungen;
 
 	//bi-directional many-to-one association to TmTelmitarbeiter
@@ -228,6 +228,19 @@ public class MMitarbeiter implements Serializable {
 		tmTelmitarbeiter.setMMitarbeiter(null);
 
 		return tmTelmitarbeiter;
+	}
+
+	@Override
+	public String toString() {
+		return "MMitarbeiter [m_ID=" + m_ID + ", m_gebDatum=" + m_gebDatum
+				+ ", mGehalt=" + mGehalt + ", mHausnummer=" + mHausnummer
+				+ ", mNachname=" + mNachname + ", mOrt=" + mOrt + ", mPlz="
+				+ mPlz + ", mStrasse=" + mStrasse + ", mVorname=" + mVorname
+				+ ", BBestellungens=" + BBestellungens
+				+ ", emEmailmitarbeiters=" + emEmailmitarbeiters
+				+ ", stStellens=" + stStellens + ", AAbteilungen="
+				+ AAbteilungen + ", tmTelmitarbeiters=" + tmTelmitarbeiters
+				+ "]";
 	}
 
 }

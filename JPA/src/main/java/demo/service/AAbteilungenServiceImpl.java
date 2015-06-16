@@ -26,13 +26,19 @@ public class AAbteilungenServiceImpl implements AAbteilungenService {
 		return abt.findBybezeichnung(bezeichnung);
 	}
 	@Override
-	public AAbteilungen save(AAbteilungen a) {
+	public AAbteilungen save1(AAbteilungen a) {
 		return abt.save(a);
 	}
 	@Override
-	public void delete(int i) {
+	public void delete1(int i) {
 		abt.delete(i);
 		
+	}
+	
+	@Override
+	public Object findOne(int id1) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	
